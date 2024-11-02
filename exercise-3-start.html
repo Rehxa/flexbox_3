@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            border-radius: 0.5rem;
+            color: white;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        body{
+            margin: 0;
+            padding: 1rem;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap:1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+        header{
+            height: 100px;
+            background-color:#1e90ff ;
+            box-shadow: 5px 5px #0077ea;
+        }
+        main{
+            box-shadow: 5px 5px #2f8d59;
+            flex-grow: 1;
+            background-color: #3cb371;
+        }
+        main .inMain{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 1rem;
+            padding: 1rem;
+            box-shadow: 5px 5px #2f8d59;
+
+        }
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 300px;
+            background-color: #2f8d59;
+            box-shadow: 5px 5px #226741;
+
+        }
+        aside{
+            flex-grow: 1;
+            width: 400px;
+            background-color: #ff6347;
+            box-shadow: 5px 5px #e02200;
+        }
+        footer{
+            height: 100px;
+            background-color: #4169e1;
+            box-shadow: 5px 5px #1d44b8;
+        }
+        p{
+            padding: 1rem;
+            margin:0px;
+        }
+    </style>
+</head>
+<body>
+    <header><p>header</p></header>
+    <div class="container">
+        <main>
+            <p>main</p>
+            <div class="inMain">
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>            
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+                <div class="item">item</div>
+            </div>
+        </main>
+        <aside><p>sidebar</p></aside>
+    </div>
+    <footer><p>footer</p></footer>
+</body>
+</html>
